@@ -9,6 +9,7 @@ npm install --save ng1-module-decorator
 ## 如何使用
 具体的代码示例请查看`/example/`目录下的代码，这里做一个简要的说明：
 ```javascript
+//导入模块装饰器
 import  NgModule  from 'ng1-module-decorator';
 //或 let NgModule = require('ng1-module-decorator');
 
@@ -61,7 +62,7 @@ import { colorService } from './share/services/colorService';
 })
 class Module {}
 
-//通过name属性导出模块,不用需要关注模块名是什么
+//导出模块：通过name属性导出模块,不用需要关注模块名是什么
 export const AppModule = new Module().name;
 ```
 元数据name必须指定，它代表了模块的名字；根模块必须导入ui.router模块，因为state元数据使用到了这个模块的功能；其他元数据都是可选的，可以不填，填一个或者多个。
