@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tumblingG/ng1-NgModule.git"
+    "url": "git+https://github.com/tumblingG/ng1-module-decorator.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tumblingG/ng1-NgModule/issues"
+    "url": "https://github.com/tumblingG/ng1-module-decorator/issues"
   },
-  "homepage": "https://github.com/tumblingG/ng1-NgModule#readme",
+  "homepage": "https://github.com/tumblingG/ng1-module-decorator#readme",
   "dependencies": {
     "@uirouter/angularjs": "^1.0.11",
     "angular": "^1.6.6",
