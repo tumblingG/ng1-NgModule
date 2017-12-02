@@ -1,7 +1,7 @@
 {
   "name": "ng1-module-decorator",
   "version": "1.0.0",
-  "description": "一个@NgModule装饰器，可以在Angular1.x中使用",
+  "description": "A lib used for angular1.x to decorator module like ng2 @NgModule",
   "keyword": [
     "angular",
     "angularJS",
