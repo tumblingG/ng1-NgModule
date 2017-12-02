@@ -1,5 +1,11 @@
+//导入装饰器
 import  NgModule  from '../index';
 //或 let NgModule = require('../index');
+
+//在实际项目你应该使用:
+//import  NgModule  from 'ng1-module-decorator';
+//或 let NgModule = require('ng1-module-decorator');
+
 
 //配置块和运行块
 import { appConfig } from './app.config';
