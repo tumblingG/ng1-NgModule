@@ -1,5 +1,5 @@
 {
-  "name": "ng1-ngmodule",
+  "name": "ng1-module-decorator",
   "version": "1.0.0",
   "description": "一个@NgModule装饰器，可以在Angular1.x中使用",
   "keyword": [
