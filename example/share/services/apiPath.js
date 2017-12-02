@@ -1,0 +1,1 @@
+export const apiPath = 'http://192.168.34.12:3000';
