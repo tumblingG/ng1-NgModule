@@ -90,6 +90,21 @@ export const AppModule = new Module().name;
 }
 
 ```
+在webpack.config.js文件中,还要把node_modules/ng1-api-service加入编译列表中。
+```
+{
+    test: /\.js$/,
+    use: {
+        loader: "babel-loader"
+    },
+    include: [
+        path.resolve(__dirname, 'example'),
+        path.resolve(__dirname, 'core'),
+        /node_modules(?!\/ng1-module-decorator)/
+    ]
+}
+```
+
 ## demo运行
 ```
 cd ng1-module-decorator

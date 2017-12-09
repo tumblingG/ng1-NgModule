@@ -1,2 +1,2 @@
-let decorator = require('./dist/module-decorator.min');
+let decorator = require('./core/module-decorator');
 module.exports = decorator.NgModule;

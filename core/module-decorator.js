@@ -1,11 +1,4 @@
-(function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('angular')) :
-    typeof define === 'function' && define.amd ? define(['exports', 'angular'], factory) :
-    (factory((global['decorator'] = {}),global.angular));
-}(this, (function(exports, ng_form_import) {
-    var ng_from_global = angular;
-    var ng = (ng_form_import && ng_form_import.module) ? ng_form_import : ng_from_global;
-
+(function(window, angular){
     const BLANK_MODULE = {
         name:         '',
         imports:      [],
@@ -29,7 +22,7 @@
                     super();
                     if (!value.name) throw new Error('expect module to have name');
                     let module = Object.assign({}, BLANK_MODULE, value);
-                    let ngModule = ng.module(module.name, module.imports);
+                    let ngModule = angular.module(module.name, module.imports);
                     this.name = module.name;
                     ngModule.config(['$stateProvider', $stateProvider => module.states.forEach(state => $stateProvider.state(state))]);
                     Object.keys(module.components).forEach(name => ngModule.component(module.components[name].selector ? module.components[name].selector : name, module.components[name]));
@@ -46,8 +39,7 @@
             };
         }
     }
-
     exports.NgModule = NgModule;
-})));
+})(window, window.angular);
 
 

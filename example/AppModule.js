@@ -1,5 +1,6 @@
 //导入装饰器
 import  NgModule  from '../index';
+console.log(NgModule);
 //或 let NgModule = require('../index');
 
 //在实际项目你应该使用:
